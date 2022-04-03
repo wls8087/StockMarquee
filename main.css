@@ -1,0 +1,79 @@
+.blink {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.marquee {
+  overflow: hidden;
+}
+.value-up {
+  color: green;
+}
+.value-down {
+  color: red;
+}
+.value-same {
+  color: blue;
+}
+.value-none {
+  display: none;
+}
+.triangle-up {
+  margin-bottom: 12px;
+  border-bottom: 30px solid green;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+.triangle-down {
+  margin-top: 18px;
+  border-top: 30px solid red;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+.triangle-none::before {
+  content: "--";
+  color: blue;
+  margin: auto 3px;
+}
+#stock-list, .test {
+  width: 100%;
+  height: 60px;
+  background-color: lightgrey;
+  display: inline-block;
+  overflow: hidden;
+  padding: auto 0;
+}
+.stock {
+  /* height: auto; */
+  font-size: 2.5rem;
+  display: inline-flex;
+  padding: 0 15px;
+}
+.stock-code {
+  font-size: 20px;
+  color: black;
+  padding-top: 10px;
+}
+.stock-name {
+  font-weight: bolder;
+  margin: auto 5px;
+  color: black;
+}
+.stock-price {
+  margin-right: 3px;
+  margin-bottom: 0;
+}
+.stock-change {
+  font-size: 30px;
+  padding-top:12px;
+}
+.test{
+  background-color: lightgreen;
+  font-size: 2rem;
+}
+.single-test{
+  background-color: orange;
+}

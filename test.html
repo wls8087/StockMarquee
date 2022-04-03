@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>香港股票追蹤 (Hong Kong Stock Tracker)</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="css/textfield.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body style="width:320px;">
+  <div id="searchStocksDiv">查詢股票：<div class="wrapper"><input id="txtSymbol" type="text" placeholder="例如：0005 / 匯豐"
+        disabled /></div><a id="btnSymbol">搜尋</a>
+    <div id="symbolMsg">更新股票中‧‧‧</div>
+  </div>
+  <table id="functionTable" cellpadding="0" cellspacing="0">
+    <tr>
+      <td style="padding:0 5px;"><a id="btnPopout">視窗 <span class="glyphicon glyphicon-new-window"></span></a> &nbsp; <a
+          id="btnInject">嵌入 <span class="glyphicon glyphicon-pushpin"></span></a> &nbsp; <a id="btnSwitchColor"><span
+            class="textRedGreen1">紅</span><span class="textRedGreen2">綠</span> <span
+            class="glyphicon glyphicon-transfer"></span></a> &nbsp; <select id="selectConfigTimer">
+          <option value="5">5秒</option>
+          <option value="10">10秒</option>
+          <option value="20">20秒</option>
+          <option value="30">30秒</option>
+          <option value="60">60秒</option>
+          <option value="120">2分鐘</option>
+          <option value="300">5分鐘</option>
+        </select> <span class="glyphicon glyphicon-time"></span></td>
+      <td id="autoUpdateStatus">
+        <div id="autoUpdateDiv"><span id="status">載入中</span> (<span id="autoUpdateCounting">0</span>)</div>
+      </td>
+    </tr>
+  </table>
+  <hr />
+  <div id="container"></div>
+  <hr />
+  <div id="copyrightDiv">
+    <div class="blackText">股票資料取自互聯網，如有侵權請通知 v3.4.6</div>如果你覺得呢個工具好用既，不妨 <a id="btnDonate" href="#"
+      style="color:brown;">捐錢</a> 支持我<br /><i>Copyright © 2022 by <a target="_blank"
+        href="mailto:sing09200920@gmail.com">sing09200920@Gmail.com</a></i>
+    <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input
+        type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="TZVN96LADPPYC">
+    </form>
+  </div>
+  <script type="text/javascript" src="js/tongwen-st.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/Cores/Unit.js"></script>
+  <script type="text/javascript" src="js/Cores/HKStock.js"></script>
+  <script type="text/javascript" src="js/Sources/Source_stockList.js"></script>
+  <script type="text/javascript" src="js/Sources/Source_marketStatus.js"></script>
+  <script type="text/javascript" src="js/Sources/Source_stockInfo.js"></script>
+  <script type="text/javascript" src="js/popup.js"></script>
+</body>
+
+</html>
